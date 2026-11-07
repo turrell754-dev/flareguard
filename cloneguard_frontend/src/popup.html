@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CloneGuard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup-body">
+  <main class="popup">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">✓</div>
+        <div><strong>Flareguard</strong><small>WEBSITE PROTECTION</small></div>
+      </div>
+      <button class="icon-button" id="settingsBtn" aria-label="Open settings">⚙</button>
+    </header>
+
+    <section class="protection-panel">
+      <div class="status-symbol" id="protectionSymbol">✓</div>
+      <div class="protection-copy">
+        <strong id="protectionTitle">Protection active</strong>
+        <small id="protectionDescription">Your browsing is being monitored</small>
+      </div>
+      <label class="switch" aria-label="Toggle protection">
+        <input id="protectionToggle" type="checkbox" checked>
+        <span class="switch-track"></span>
+      </label>
+    </section>
+
+    <section class="panel current-panel">
+      <div class="eyebrow-row"><span class="eyebrow">CURRENT WEBSITE</span><span class="live-dot">● LIVE CHECK</span></div>
+      <div class="site-row">
+        <div class="site-icon">◎</div>
+        <div class="site-copy"><strong id="domain">Checking tab…</strong><small id="protocol">Checking connection</small></div>
+      </div>
+      <div class="result-banner" id="resultBanner">
+        <span id="resultIcon">✓</span><strong id="resultText">Checking website…</strong>
+      </div>
+      <div class="trust-row"><span>Risk indicator</span><strong id="riskLabel">Not assessed</strong></div>
+      <div class="meter"><span id="riskMeter"></span></div>
+      <p class="fine-print" id="explanation">A local demo check is not a guarantee that a website is safe.</p>
+    </section>
+
+    <section class="stats-grid">
+      <article class="panel stat"><span class="stat-icon">⛨</span><strong id="blockedCount">0</strong><small>Threats blocked</small></article>
+      <article class="panel stat"><span class="stat-icon">⌕</span><strong id="scannedCount">0</strong><small>Sites checked</small></article>
+    </section>
+
+    <section class="panel activity-panel">
+      <div class="eyebrow-row"><strong>Recent activity</strong><button class="text-button" id="clearHistory">Clear</button></div>
+      <div id="history" class="history"><p class="muted">No recent checks yet.</p></div>
+    </section>
+    <footer><span>🔒 Flareguard</span></footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

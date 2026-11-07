@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "FlareGuard",
+  "version": "1.0.0",
+  "description": "A frontend for identifying suspicious website clones.",
+  "permissions": ["activeTab", "storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "flareGuard"
+  },
+  "options_page": "settings.html",
+  "background": {
+    "service_worker": "background.js"
+  }
+}

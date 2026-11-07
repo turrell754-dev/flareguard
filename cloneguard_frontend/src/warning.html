@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Security warning · CloneGuard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="warning-page">
+<main class="warning-card">
+  <div class="warning-shield">⬡</div><span class="alert-label">SECURITY ALERT</span>
+  <h1>Potentially fraudulent website</h1>
+  <p>CloneGuard has identified signals that may indicate a website is impersonating another service. Do not enter passwords or payment details.</p>
+  <section class="detected-box"><small>DETECTED WEBSITE</small><strong id="detectedDomain">Unknown domain</strong><p id="reason">Suspicious URL pattern detected</p></section>
+  <section class="safe-destination"><small>VERIFIED DESTINATION SUGGESTION</small><strong id="safeDomain">No verified destination available</strong><button class="primary-button" id="visitOfficial" disabled>Visit official website ↗</button></section>
+  <button class="secondary-button" id="goBack">Go back</button>
+  <p class="notice">Prototype warning screen. The suggested domain must be verified before production use.</p>
+</main>
+<script src="warning.js">
+</script>
+</body>
+</html>
